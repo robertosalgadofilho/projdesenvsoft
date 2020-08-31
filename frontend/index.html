@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="icon" type="image/jpg" href="imagens/ds.jpg" />
+</head>
+  </head>
+<body>
+  <header> 
+    <h2>Digital Store</h2>
+    <p class="w3-right">
+      <i class="far fa-id-badge w3-margin-right"></i><a onclick="carregar('conta.html');" href=#>Minha conta</a>
+      <i class="fa fa-shopping-bag w3-margin-right"></i><a onclick="carregar('pedidos.html');" href=#>Meus pedidos</a>
+      <i class="fa fa-shopping-cart w3-margin-right"></i><a onclick="carregar('carrinho.html');" class="w3-margin-right" href=#>Carrinho</a>
+	</p>
+  </header>
+  <nav class="w3-bar w3-black">   
+	  <a onclick="carregar('inicio.html');" href="#" class="w3-bar-item w3-button">Início</a>
+	  <a onclick="carregar('produtos.html');" href="#" class="w3-bar-item w3-button">Produtos</a>
+  </nav>
+  <div class="w3-container">
+	<div id="conteudo">
+	<!-- O conteúdo da página será carregado via jQuery aqui! -->
+	</div>
+  </div>
+  <footer class="w3-container">
+    <div class="w3-container w3-black"> 
+		<p> Digital Store - Copyright© 2020 UNICNEC</p>
+    </div> 
+    <div class="w3-center">   
+		<p>
+			<a onclick="carregar('sobre.html');" href="#">Sobre</a>
+		</p>     
+	</div>
+  </footer>
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <script>
+	/* O código abaixo carrega a página inicial sempre que se acessa a página */
+	$( document ).ready(function() {
+		$("#conteudo").load("inicio.html");
+	});
+	/* A função "carregar" é chamada sempre que o usuário clica em um dos links da página. */
+    function carregar(pagina){
+        $("#conteudo").load(pagina);
+    }
+  </script>
+</body>
+</html>
