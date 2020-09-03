@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: black; /*cor de fonte*/
+	font-family: Arial, Helvetica, sans-serif; /*tipo de fonte*/
+	margin:0; /*sem margem*/
+	padding:0; /*sem espaçamento*/	
+}
+
+header {
+	/*cria os cantos arredondados*/
+	border-radius:20px 20px 0px 0px; /*arredondamento dos cantos*/
+	width:100%; /*largura da página*/
+	background: rgb(198,198,198); /* Old browsers */ /*cor de fundo do corpo da página*/
+    height:100px; /*altura do cabeçalho*/
+	float:left;  /*flutua à esquerda*/
+	text-indent:10px; /*cria um recuo do texto à esquerda*/
+}
+
+section {
+	text-indent:10px; /*cria um recuo do texto à esquerda*/
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#A9A9A9; /*cor de fundo do corpo da página*/
+	border-radius:0px 0px 20px 20px; /*arredondamento dos cantos inferiores*/
+	text-indent:10px; /*cria um recuo do texto à esquerda*/ 
+} 
+	
+	/*Formatação de Menu*/
+ul {
+    list-style-type: none; /*remove o sublinhado*/
+    margin: 0; /*sem margem*/
+    padding: 0; /*sem espaçamento*/
+    overflow: hidden;    /*O conteúdo é cortado e nenhuma barra de rolagem é exibida.*/
+}
+
+li{
+	float:left; /*flutua à esquerda*/
+}
+
+li a {
+    display: inline-block; /*os links ficam lado a lado*/
+    color: black; /*cor da fonte preta*/
+    text-align: center; /*texto alinado à direita*/
+    text-decoration: none; /*links sem sublinhado*/
+	text-indent: 5px 5px 5px 5px; /*cria um recuo do texto*/
+	padding:5px 5px 5px 5px; /*cria um espaçamento entre o texto e a borda*/
+}
+
+li a:hover{
+    background-color: #D3D3D3; /*cor de fundo*/
+}
+
+a{	  
+	color: black; /*cor da fonte*/
+	style-type:underline; /*link sublinhado*/
+	font-weight: 300;
+}
+
+hr{
+	margin: 0;
+	border-top: 2px solid #bbb;
+}
+
+
+
